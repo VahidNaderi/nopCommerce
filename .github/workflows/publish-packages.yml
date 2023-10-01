@@ -1,0 +1,41 @@
+name: publish-latest
+on:
+  workflow_dispatch:
+  push:
+    paths: ../../../src/NuGet
+
+jobs:
+  build_and_pack:
+    name: Build and Pack NopCommerce
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build NopCommerce
+        run: dotnet build --configuration Release /p:Version=$VERSION
+
+      - name: Run Tests
+        run: dotnet test --configuration Release --no-build --no-restore
+
+      - name: Pack Elsa
+        run: dotnet pack --configuration Release /p:Version=$VERSION /p:PackageOutputPath=$(pwd)/out 
+        if: ${{ github.event_name == 'release' || github.event_name == 'push'}}
+
+      - name: Upload Elsa Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: nopcommerce-nuget-package
+          path: out/*nupkg
+        if: ${{ github.event_name == 'release' || github.event_name == 'push'}}
+        
+  publish_nuget_release:
+    name: Publish to Nuget
+    needs: build_and_pack
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'release' }}
+    steps:
+      - name: Download Nuget Packages
+        uses: actions/download-artifact@v3
+        with:
+          name: nopcommerce-nuget-package
+      
+      - name: Publish Nuget Packages to Nuget
+        run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
