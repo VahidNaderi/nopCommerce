@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build NopCommerce
-        run: dotnet build --configuration Release /p:Version=$VERSION
+        run: dotnet build .\src\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj --configuration Release /p:Version=$VERSION
 
       - name: Run Tests
         run: dotnet test --configuration Release --no-build --no-restore
