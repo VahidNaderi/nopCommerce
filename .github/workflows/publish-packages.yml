@@ -14,13 +14,13 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Build NopCommerce
-        run: dotnet build --configuration Release /p:Version=$VERSION
+        run: dotnet build --configuration Release
         working-directory: ./src/Presentation/Nop.Web.Framework
 
       - name: Run Tests
         run: dotnet test --configuration Release --no-build --no-restore
 
-      - name: Pack Elsa
+      - name: Pack nopcommerce
         run: dotnet pack --configuration Release /p:Version=$VERSION /p:PackageOutputPath=$(pwd)/out 
         if: ${{ github.event_name == 'release' || github.event_name == 'push'}}
 
