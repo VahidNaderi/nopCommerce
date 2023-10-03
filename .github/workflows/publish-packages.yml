@@ -19,9 +19,10 @@ jobs:
 
       - name: Run Tests
         run: dotnet test --configuration Release --no-build --no-restore
+        working-directory: ./src/Tests//Nop.Tests
 
       - name: Pack nopcommerce
-        run: dotnet pack --configuration Release /p:Version=$VERSION /p:PackageOutputPath=$(pwd)/out 
+        run: dotnet pack --configuration Release /p:Version=$VERSION /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=~/src/NuGet/nopcommerce.nuspec
         if: ${{ github.event_name == 'release' || github.event_name == 'push'}}
 
       - name: Upload Elsa Artifact
