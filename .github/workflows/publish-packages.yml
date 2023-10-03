@@ -22,7 +22,7 @@ jobs:
         working-directory: ./src/Tests//Nop.Tests
 
       - name: Pack nopcommerce
-        run: dotnet pack ./src/Presentation/Nop.Web.Framework/Nop.Web.Framework.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=~/src/NuGet/nopcommerce.nuspec
+        run: dotnet pack ./src/Presentation/Nop.Web.Framework/Nop.Web.Framework.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nopcommerce.nuspec
 
       - name: Upload Elsa Artifact
         uses: actions/upload-artifact@v3
