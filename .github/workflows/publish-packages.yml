@@ -30,13 +30,11 @@ jobs:
         with:
           name: nopcommerce-nuget-package
           path: out/*nupkg
-        if: ${{ github.event_name == 'release' || github.event_name == 'push'}}
         
   publish_nuget_release:
     name: Publish to Nuget
     needs: build_and_pack
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'release' }}
     steps:
       - name: Download Nuget Packages
         uses: actions/download-artifact@v3
