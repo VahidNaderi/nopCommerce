@@ -60,8 +60,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Presentation\Nop.Web.Framework\bin\Debug\net7.0\*.dll" target="lib/net7.0" />
-    <file src="..\Presentation\Nop.Web.Framework\bin\Debug\net7.0\*.pdb" target="lib/net7.0" />
+    <file src="..\Presentation\Nop.Web.Framework\bin\Release\net7.0\*.dll" target="lib/net7.0" />
+    <file src="..\Presentation\Nop.Web.Framework\bin\Release\net7.0\*.pdb" target="lib/net7.0" />
     <file src="license.txt" />
     <file src="nopcommerce_logo-128x128.png"/>
   </files>
