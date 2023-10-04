@@ -29,7 +29,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Libraries\Services\bin\Release\net7.0\*.dll" target="lib" />
+    <file src="..\Libraries\Nop.Services\bin\Release\net7.0\*.dll" target="lib" />
     <file src="license.txt" />
     <file src="nopcommerce_logo-128x128.png"/>
   </files>
