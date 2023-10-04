@@ -21,10 +21,10 @@ jobs:
         run: dotnet test --configuration Release --no-build --no-restore
         working-directory: ./src/Tests//Nop.Tests
 
-      - name: Pack nopcommerce
+      - name: Pack nopCommerce
         run: dotnet pack ./src/Presentation/Nop.Web.Framework/Nop.Web.Framework.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nopcommerce.nuspec
 
-      - name: Upload Elsa Artifact
+      - name: Upload nopCommerce Artifact
         uses: actions/upload-artifact@v3
         with:
           name: nopcommerce-nuget-package
