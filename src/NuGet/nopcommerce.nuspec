@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>NopCommerce.All</id>
+    <version>4.5.0.5</version>
+    <authors>nopPlus</authors>
+    <description>Nop.Web.Framework is a class library project containing some common presentation things for Nop.Web project</description>
+    <language>en-US</language>
+    <projectUrl>https://www.nopcommerce.com/</projectUrl>
+    <license type="file">license.txt</license>
+    <icon>nopcommerce_logo-128x128.png</icon>
+    <references>
+      <reference file="Nop.Core.dll" />
+      <reference file="Nop.Data.dll" />
+      <reference file="Nop.Services.dll" />
+      <reference file="Nop.Web.Framework.dll" />
+    </references>
+    <dependencies>
+      <dependency id="Autofac.Extensions.DependencyInjection" version="8.0.0" />
+      <dependency id="AutoMapper.Extensions.Microsoft.DependencyInjection" version="12.0.0" />
+      <dependency id="Azure.Extensions.AspNetCore.DataProtection.Blobs" version="1.3.1" />
+      <dependency id="Azure.Extensions.AspNetCore.DataProtection.Keys" version="1.2.1" />
+      <dependency id="Azure.Identity" version="1.8.2" />
+      <dependency id="Humanizer" version="2.14.1" />
+      <dependency id="Microsoft.AspNetCore.Mvc.NewtonsoftJson" version="7.0.3" />
+      <dependency id="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" version="7.0.3" />
+      <dependency id="Microsoft.Azure.Services.AppAuthentication" version="1.6.2" />
+      <dependency id="Microsoft.Extensions.Caching.StackExchangeRedis" version="7.0.3" />
+      <dependency id="Microsoft.Extensions.Caching.SqlServer" version="7.0.3" />
+      <dependency id="MiniProfiler.AspNetCore.Mvc" version="4.2.22" />
+      <dependency id="Nito.AsyncEx.Coordination" version="5.1.2" />
+      <dependency id="System.IO.FileSystem.AccessControl" version="5.0.0" />
+      <dependency id="System.Linq.Async" version="6.0.1" />
+
+      <dependency id="FluentMigrator" version="3.3.2" />
+      <dependency id="FluentMigrator.Runner" version="3.3.2" />
+      <dependency id="linq2db" version="4.3.0" />
+      <dependency id="Microsoft.Data.SqlClient" version="5.1.0" />
+      <dependency id="MySqlConnector" version="2.2.5" />
+      <dependency id="Npgsql" version="7.0.2" />
+      <dependency id="System.Configuration.ConfigurationManager" version="7.0.0" />
+      <dependency id="System.Net.NameResolution" version="4.3.0" />
+
+      <dependency id="Azure.Storage.Blobs" version="12.15.0" />
+      <dependency id="ClosedXML" version="0.100.3" />
+      <dependency id="HarfBuzzSharp.NativeAssets.Linux" version="2.8.2.3" />
+      <dependency id="MailKit" version="3.4.3" />
+      <dependency id="MaxMind.GeoIP2" version="5.1.0" />
+      <dependency id="QuestPDF" version="2022.12.1" />
+      <dependency id="System.ServiceModel.Http" version="4.10.0" />
+      <dependency id="SkiaSharp" version="2.88.3" />
+      <dependency id="SkiaSharp.NativeAssets.Linux.NoDependencies" version="2.88.3" />
+      <dependency id="Svg.Skia" version="0.5.18" />
+      <dependency id="System.Linq.Dynamic.Core" version="1.3.1" />
+
+      <dependency id="FluentValidation.AspNetCore" version="11.2.2" />
+      <dependency id="LigerShark.WebOptimizer.Core" version="3.0.380" />
+      <dependency id="WebMarkupMin.AspNetCore7" version="2.13.8" />
+      <dependency id="WebMarkupMin.NUglify" version="2.13.6" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Presentation\Nop.Web.Framework\bin\Debug\net7.0\*.dll" target="lib/net7.0" />
+    <file src="..\Presentation\Nop.Web.Framework\bin\Debug\net7.0\*.pdb" target="lib/net7.0" />
+    <file src="license.txt" />
+    <file src="nopcommerce_logo-128x128.png"/>
+  </files>
+</package>
