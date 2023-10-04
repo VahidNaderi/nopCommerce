@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Services</id>
-    <version>4.5.0.3</version>
+    <version>4.60.4.0</version>
     <authors>nopPlus</authors>
     <description>Nop.Web.Framework is a class library project containing some common presentation things for Nop.Web project</description>
     <language>en-US</language>
