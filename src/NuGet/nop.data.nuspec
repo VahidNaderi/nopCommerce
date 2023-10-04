@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>NopCommerce.Data</id>
+    <version>4.5.0.3</version>
+    <authors>nopPlus</authors>
+    <description>Nop.Web.Framework is a class library project containing some common presentation things for Nop.Web project</description>
+    <language>en-US</language>
+    <projectUrl>https://www.nopcommerce.com/</projectUrl>
+    <license type="file">license.txt</license>
+    <icon>nopcommerce_logo-128x128.png</icon>
+    <references>
+      <reference file="Nop.Core.dll" />
+      <reference file="Nop.Data.dll" />
+    </references>
+    <dependencies>
+      <dependency id="FluentMigrator" version="3.3.2" />
+      <dependency id="FluentMigrator.Runner" version="3.3.2" />
+      <dependency id="linq2db" version="4.3.0" />
+      <dependency id="Microsoft.Data.SqlClient" version="5.1.0" />
+      <dependency id="MySqlConnector" version="2.2.5" />
+      <dependency id="Npgsql" version="7.0.2" />
+      <dependency id="System.Configuration.ConfigurationManager" version="7.0.0" />
+      <dependency id="System.Net.NameResolution" version="4.3.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Libraries\Data\bin\Release\net7.0\*.dll" target="lib" />
+    <file src="license.txt" />
+    <file src="nopcommerce_logo-128x128.png"/>
+  </files>
+</package>
