@@ -25,8 +25,8 @@ jobs:
         run: |
           dotnet pack ./src/Presentation/Nop.Web.Framework/Nop.Web.Framework.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.web.framework.nuspec
           dotnet pack ./src/Libraries/Nop.Core/Nop.Core.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.core.nuspec
-          dotnet pack ./src/Libraries/Nop.Core/Nop.Data.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.data.nuspec
-          dotnet pack ./src/Libraries/Nop.Core/Nop.Services.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.services.nuspec
+          dotnet pack ./src/Libraries/Nop.Data/Nop.Data.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.data.nuspec
+          dotnet pack ./src/Libraries/Nop.Services/Nop.Services.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.services.nuspec
 
       - name: Upload nopCommerce Artifact
         uses: actions/upload-artifact@v3
