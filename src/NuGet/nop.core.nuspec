@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Core</id>
-    <version>4.60.4.0</version>
+    <version>4.60.4.1</version>
     <authors>nopPlus</authors>
-    <description>Nop.Web.Framework is a class library project containing some common presentation things for Nop.Web project</description>
+    <description>The Nop.Core project contains a set of core classes for nopCommerce, such as caching, events, helpers, and business objects (for example, Order and Customer entities).</description>
     <language>en-US</language>
     <projectUrl>https://www.nopcommerce.com/</projectUrl>
     <license type="file">license.txt</license>
