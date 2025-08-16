@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Data</id>
-    <version>4.60.4.1</version>
+    <version>4.80.8.1</version>
     <authors>nopPlus</authors>
     <description>The Nop.Data project contains a set of classes and functions for reading from and writing to a database or other data store. It helps separate data-access logic from your business objects.</description>
     <language>en-US</language>
@@ -15,18 +15,18 @@
     <dependencies>
       <dependency id="NopCommerce.Nop.Core" version="4.60.4.1" />
 
-      <dependency id="FluentMigrator" version="3.3.2" />
-      <dependency id="FluentMigrator.Runner" version="3.3.2" />
-      <dependency id="linq2db" version="4.3.0" />
-      <dependency id="Microsoft.Data.SqlClient" version="5.1.0" />
-      <dependency id="MySqlConnector" version="2.2.5" />
-      <dependency id="Npgsql" version="7.0.2" />
-      <dependency id="System.Configuration.ConfigurationManager" version="7.0.0" />
+      <dependency id="FluentMigrator" version="6.2.0" />
+      <dependency id="FluentMigrator.Runner" version="6.2.0" />
+      <dependency id="linq2db" version="5.4.1" />
+      <dependency id="Microsoft.Data.SqlClient" version="5.2.2" />
+      <dependency id="MySqlConnector" version="2.4.0" />
+      <dependency id="Npgsql" version="9.0.1" />
+      <dependency id="System.Configuration.ConfigurationManager" version="9.0.0" />
       <dependency id="System.Net.NameResolution" version="4.3.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Libraries\Nop.Data\bin\Release\net7.0\*.dll" target="lib" />
+    <file src="..\Libraries\Nop.Data\bin\Release\net9.0\*.dll" target="lib" />
     <file src="license.txt" />
     <file src="nopcommerce_logo-128x128.png"/>
   </files>

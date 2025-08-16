@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Services</id>
-    <version>4.60.4.1</version>
+    <version>4.80.8.1</version>
     <authors>nopPlus</authors>
     <description>This project contains a set of core services, business logic, validations or calculations related with the data, if needed. Some people call it Business Access Layer (BAL).</description>
     <language>en-US</language>
@@ -16,21 +16,24 @@
       <dependency id="NopCommerce.Nop.Core" version="4.60.4.1" />
       <dependency id="NopCommerce.Nop.Data" version="4.60.4.1" />
 
-      <dependency id="Azure.Storage.Blobs" version="12.15.0" />
-      <dependency id="ClosedXML" version="0.100.3" />
-      <dependency id="HarfBuzzSharp.NativeAssets.Linux" version="2.8.2.3" />
-      <dependency id="MailKit" version="3.4.3" />
-      <dependency id="MaxMind.GeoIP2" version="5.1.0" />
-      <dependency id="QuestPDF" version="2022.12.1" />
-      <dependency id="System.ServiceModel.Http" version="4.10.0" />
-      <dependency id="SkiaSharp" version="2.88.3" />
-      <dependency id="SkiaSharp.NativeAssets.Linux.NoDependencies" version="2.88.3" />
-      <dependency id="Svg.Skia" version="0.5.18" />
-      <dependency id="System.Linq.Dynamic.Core" version="1.3.1" />
+      <dependency id="Azure.Storage.Blobs" version="12.23.0" />
+      <dependency id="ClosedXML" version="0.104.2" />
+      <dependency id="Google.Apis.Auth" version="1.68.0" />
+      <!--Do not remove this reference. HarfBuzzSharp.NativeAssets.Linux library need for properly work SkiaSharp.HarfBuzz on the UNIX system-->
+      <dependency id="HarfBuzzSharp.NativeAssets.Linux" version="2.8.2.5" />
+      <dependency id="MailKit" version="4.5.0" />
+      <dependency id="MaxMind.GeoIP2" version="5.2.0" />
+      <dependency id="Microsoft.Identity.Client" version="4.66.2" />
+      <dependency id="QuestPDF" version="2022.12.15" />
+      <dependency id="System.ServiceModel.Http" version="8.1.0" />
+      <dependency id="SkiaSharp" version="2.88.9" />
+      <dependency id="SkiaSharp.NativeAssets.Linux.NoDependencies" version="2.88.9" />
+      <dependency id="Svg.Skia" version="2.0.0.4" />
+      <dependency id="System.Linq.Dynamic.Core" version="1.4.9" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Libraries\Nop.Services\bin\Release\net7.0\*.dll" target="lib" />
+    <file src="..\Libraries\Nop.Services\bin\Release\net9.0\*.dll" target="lib" />
     <file src="license.txt" />
     <file src="nopcommerce_logo-128x128.png"/>
   </files>

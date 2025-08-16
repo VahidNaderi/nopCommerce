@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Core</id>
-    <version>4.60.4.1</version>
+    <version>4.80.8.1</version>
     <authors>nopPlus</authors>
     <description>The Nop.Core project contains a set of core classes for nopCommerce, such as caching, events, helpers, and business objects (for example, Order and Customer entities).</description>
     <language>en-US</language>
@@ -13,25 +13,23 @@
       <reference file="Nop.Core.dll" />
     </references>
     <dependencies>
-      <dependency id="Autofac.Extensions.DependencyInjection" version="8.0.0" />
-      <dependency id="AutoMapper.Extensions.Microsoft.DependencyInjection" version="12.0.0" />
-      <dependency id="Azure.Extensions.AspNetCore.DataProtection.Blobs" version="1.3.1" />
-      <dependency id="Azure.Extensions.AspNetCore.DataProtection.Keys" version="1.2.1" />
-      <dependency id="Azure.Identity" version="1.8.2" />
+      <dependency id="Autofac.Extensions.DependencyInjection" version="10.0.0" />
+      <dependency id="AutoMapper" version="13.0.1" />
+      <dependency id="Azure.Extensions.AspNetCore.DataProtection.Blobs" version="1.3.4" />
+      <dependency id="Azure.Extensions.AspNetCore.DataProtection.Keys" version="1.2.4" />
+      <dependency id="Azure.Identity" version="1.13.1" />
       <dependency id="Humanizer" version="2.14.1" />
-      <dependency id="Microsoft.AspNetCore.Mvc.NewtonsoftJson" version="7.0.3" />
-      <dependency id="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" version="7.0.3" />
-      <dependency id="Microsoft.Azure.Services.AppAuthentication" version="1.6.2" />
-      <dependency id="Microsoft.Extensions.Caching.StackExchangeRedis" version="7.0.3" />
-      <dependency id="Microsoft.Extensions.Caching.SqlServer" version="7.0.3" />
-      <dependency id="MiniProfiler.AspNetCore.Mvc" version="4.2.22" />
+      <dependency id="Microsoft.AspNetCore.Mvc.NewtonsoftJson" version="9.0.0" />
+      <dependency id="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" version="9.0.0" />
+      <dependency id="Microsoft.Extensions.Caching.StackExchangeRedis" version="9.0.0" />
+      <dependency id="Microsoft.Extensions.Caching.SqlServer" version="9.0.0" />
       <dependency id="Nito.AsyncEx.Coordination" version="5.1.2" />
       <dependency id="System.IO.FileSystem.AccessControl" version="5.0.0" />
       <dependency id="System.Linq.Async" version="6.0.1" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Libraries\Nop.Core\bin\Release\net7.0\*.dll" target="lib" />
+    <file src="..\Libraries\Nop.Core\bin\Release\net9.0\*.dll" target="lib" />
     <file src="license.txt" />
     <file src="nopcommerce_logo-128x128.png"/>
   </files>
