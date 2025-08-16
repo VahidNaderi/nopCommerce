@@ -29,7 +29,7 @@ jobs:
           dotnet pack ./src/Libraries/Nop.Services/Nop.Services.csproj --configuration Release /p:PackageOutputPath=$(pwd)/out /p:NuspecFile=../../NuGet/nop.services.nuspec
 
       - name: Upload nopCommerce Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: nopcommerce-nuget-package
           path: out/*nupkg
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Nuget Packages
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: nopcommerce-nuget-package
       
