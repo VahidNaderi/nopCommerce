@@ -13,9 +13,9 @@
       <reference file="Nop.Web.Framework.dll" />
     </references>
     <dependencies>
-      <dependency id="NopCommerce.Nop.Core" version="4.60.4.1" />
-      <dependency id="NopCommerce.Nop.Data" version="4.60.4.1" />
-      <dependency id="NopCommerce.Nop.Services" version="4.60.4.1" />
+      <dependency id="NopCommerce.Nop.Core" version="4.80.8.1" />
+      <dependency id="NopCommerce.Nop.Data" version="4.80.8.1" />
+      <dependency id="NopCommerce.Nop.Services" version="4.80.8.1" />
       
       <dependency id="FluentValidation.AspNetCore" version="11.3.0" />
       <dependency id="LigerShark.WebOptimizer.Core" version="3.0.426" />
