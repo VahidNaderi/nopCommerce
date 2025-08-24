@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Web.Framework</id>
-    <version>4.80.8.1</version>
+    <version>4.80.8.2</version>
     <authors>nopPlus</authors>
     <description>Nop.Web.Framework is a class library project containing some common presentation things for Nop.Web project</description>
     <language>en-US</language>
@@ -13,9 +13,9 @@
       <reference file="Nop.Web.Framework.dll" />
     </references>
     <dependencies>
-      <dependency id="NopCommerce.Nop.Core" version="4.80.8.1" />
-      <dependency id="NopCommerce.Nop.Data" version="4.80.8.1" />
-      <dependency id="NopCommerce.Nop.Services" version="4.80.8.1" />
+      <dependency id="NopCommerce.Nop.Core" version="4.80.8.2" />
+      <dependency id="NopCommerce.Nop.Data" version="4.80.8.2" />
+      <dependency id="NopCommerce.Nop.Services" version="4.80.8.2" />
       
       <dependency id="FluentValidation.AspNetCore" version="11.3.0" />
       <dependency id="LigerShark.WebOptimizer.Core" version="3.0.426" />
@@ -24,8 +24,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Presentation\Nop.Web.Framework\bin\Release\net9.0\*.dll" target="lib/net7.0" />
-    <file src="..\Presentation\Nop.Web.Framework\bin\Release\net9.0\*.pdb" target="lib/net7.0" />
+    <file src="..\Presentation\Nop.Web.Framework\bin\Release\net9.0\*.dll" target="lib/net9.0" />
+    <file src="..\Presentation\Nop.Web.Framework\bin\Release\net9.0\*.pdb" target="lib/net9.0" />
     <file src="license.txt" />
     <file src="nopcommerce_logo-128x128.png"/>
   </files>

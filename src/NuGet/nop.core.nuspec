@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Core</id>
-    <version>4.80.8.1</version>
+    <version>4.80.8.2</version>
     <authors>nopPlus</authors>
     <description>The Nop.Core project contains a set of core classes for nopCommerce, such as caching, events, helpers, and business objects (for example, Order and Customer entities).</description>
     <language>en-US</language>

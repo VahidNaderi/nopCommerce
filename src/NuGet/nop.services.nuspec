@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NopCommerce.Nop.Services</id>
-    <version>4.80.8.1</version>
+    <version>4.80.8.2</version>
     <authors>nopPlus</authors>
     <description>This project contains a set of core services, business logic, validations or calculations related with the data, if needed. Some people call it Business Access Layer (BAL).</description>
     <language>en-US</language>
